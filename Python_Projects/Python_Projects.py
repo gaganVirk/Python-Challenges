@@ -1,49 +1,42 @@
-# 4_1 Pizzas 
-pizzas = ['vege', 'meat', 'fish']
+'''
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
 
-for pizza in pizzas:
-    print("i like " + pizza)
+print(players)
 
-print("i am learning python")
-print("i am loving it!")
+print("First three items from list")
+print(players[:3])
 
-# 4_2 Animals
-animals = ['tiger', 'cat', 'dog']
-for animal in animals:
-    print(animal[0] + " is a dangerous animal.")
-    
-print("Any of those animals would be a great pet.")
+print("Three items from the middle of the list")
+print(players[1:4])
 
-#4_3 Counting to Twenty
-for i in range(1,21):
-    print(i)
+print("Print the last three items in the list.")
+print(players[-3:])
+'''
 
-#4_4 One Million
+fav_pizzas = ['pepperoni', 'chicken', 'beef']
 
-for num in range(1,1000000):
-    print(num) 
+friend_pizzas = fav_pizzas.copy()
+print("Adding new pizza to the favorite list.")
+fav_pizzas.append('new pizza')
+print(fav_pizzas)
+print("\n")
 
-# 4_5 Summing a Million
-value = list(range(1,1000001))
-print(min(value))
-print(max(value))
-print(sum(value))
+print("Add a different pizza to the list friend_pizzas")
+friend_pizzas.append('vege')
+print(friend_pizzas)
+print("\n")
 
-# 4_6 Odd Numbers
-for i  in range(1,20):
-    if i % 2 != 0:
-        print(i)
 
-# 4_7 Threes
-for i in range(1,11):
-    three = i * 3
-    print(three)
+print("My favorite pizzas are: ")
+for fav_pizza in fav_pizzas:
+    print(fav_pizza)
 
-# 4_8 Cubes
-for i in range(1, 11):
-    cube = i ** 3
-    print(cube)
+print("\nMy friend's favorite pizzas are:")
+for friend in friend_pizzas:
+    print(friend)
 
-# 4_9 Cube Comprehension
-cubes = [value ** 3 for value in range(1,11)]
-print(cubes)
+
+
+
+
+
